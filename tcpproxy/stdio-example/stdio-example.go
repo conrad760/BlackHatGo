@@ -30,6 +30,11 @@ func main() {
 		writer FooWriter
 	)
 
+	// Could do this
+	// if _, err := io.Copy(&writer, &reader); err != nil {
+	// 	log.Fatalln("Unable to read/write data")
+	// }
+
 	// Create buffer to hold input/output.
 	input := make([]byte, 4096)
 
